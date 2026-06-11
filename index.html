@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tic Tac Toe Infinity</title>
+<link rel="stylesheet" href="style.css"></head><body>
+
+<div id="home" class="screen">
+<div class="card">
+<h1>TIC TAC TOE</h1><h2>HAVE FUN!</h2>
+<button onclick="showAI()">🤖 PLAY VS AI</button>
+<button onclick="startPVP()">👥 PLAY VS PLAYER</button>
+<button onclick="exitGame()">🚪 EXIT</button>
+</div></div>
+
+<div id="setup" class="screen hidden">
+<div class="card">
+<h2>Choose Symbol</h2>
+<button class="click-btn" onclick="player='X'">❌ </button>
+<button class="click-btn" onclick="player='O'">⭕ </button>
+<h2>Difficulty</h2>
+<select id="difficulty"><option>Easy</option><option>Medium</option><option>Impossible</option></select><br><br>
+<button onclick="startAI()">START MATCH</button>
+</div></div>
+
+<div id="game" class="screen hidden">
+<h2 id="status"></h2>
+<div id="board" class="board"></div>
+<button class="click-btn"onclick="restart()">🔄 Restart</button>
+<button onclick="goHome()">🏠 Home</button>
+</div>
+
+<script src="script.js"></script></body></html>
